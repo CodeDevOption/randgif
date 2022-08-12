@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
-}
+.GifApp{
+    min-height:100vh;
+    width:100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:1rem;
+    flex-wrap:wrap;
+    padding:2rem 3rem;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+    background:-moz-linear-gradient(125deg, rgba(77, 108, 238, 1) 0%, rgba(238, 130, 221, 1) 100%); 
+    
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(125deg, rgba(77, 108, 238, 1) 0%, rgba(238, 130, 221, 1) 100%);
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+    /* opera 11.10+ */
+    background:-o-linear-gradient(125deg, rgba(77, 108, 238, 1) 0%, rgba(238, 130, 221, 1) 100%);
 
-.App-link {
-  color: #61dafb;
-}
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EE82DD', endColorstr='#4D6CEE', GradientType=0 );
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    /* ie 10+ */
+    background:-ms-linear-gradient(125deg, rgba(77, 108, 238, 1) 0%, rgba(238, 130, 221, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(125deg, rgba(77, 108, 238, 1) 0%, rgba(238, 130, 221, 1) 100%);
 }
+@media only screen and (max-width:850px) {
+
+        .GifApp{
+            padding:1rem;
+            justify-content: center;
+        }
+    }
+
